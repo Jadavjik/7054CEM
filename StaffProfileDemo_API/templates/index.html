@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Insurance</title>
+</head>
+<body style="background-color:#dcdcdc;">
+    <br><br>
+    <div align="center">
+    <h1 style="color:#808080; text-align:center; font-size:38px; font-family:Apple Chancery"> Smart Insurance </h1>
+        <h2 style="color:#808080; text-align:center; font-size:34px; font-family:Apple Chancery"> Dashboard </h2>
+    <br><br>
+    <table border = "0" cellpadding = "4" cellspacing = "5">
+        <tr>
+        <td>
+            <a href = "\enternewmanager">
+            <button style="background-color:#dcdcdc; background-color: #f5fffa ; width: 100%; padding:18px 30px; text-align:center; color:#808080; font-family:Courier; font-size:18px" >
+            New User</button></a>
+        </td>
+       <!-- <td>
+            <a href = "\enternewadvisor">
+            <button style="height:75px;width:150px; background-color: #B3B6B7 ; border-color: #B3B6B7; color: #34495E" >
+            New Advisor</button></a>
+        </td>-->
+        <td>
+            <a href = "\updatenew">
+            <button style="background-color:#dcdcdc;border-colour:#f5fffa; width: 100%; padding:18px 30px; text-align:center; color:#808080; font-family:Courier; font-size:18px">
+            Update User</button></a>
+        </td>
+        <td centre>
+            <a href = "\remove">
+            <button style="background-color:#dcdcdc;border-colour:#f5fffa; width: 100%; padding:18px 30px; text-align:center;color:#808080; font-family:Courier; font-size:18px" >
+            Delete User</button></a>
+        </td>
+        <td>
+            <a href = "\getclients">
+            <button style=" background-color:#dcdcdc;border-colour:#f5fffa; width: 100%; padding:18px 30px; text-align:center; color:#808080; font-family:Courier; font-size:18px" >
+            Get List of Users</button></a>
+        </td>
+        </tr>
+    </table><br>
+    <table  border = "5" cellpadding = "10" cellspacing = "5" bordercolor="#d3d3d3" bgcolor="#696969">
+     <thead bgcolor="#a9a9a9" >
+        <td style="color:#f5fffa;font-family:Courier; font-size:20px">Full Name</td>
+        <td style="color:#f5fffa;font-family:Courier; font-size:20px">Email</td>
+        <td style="color:#f5fffa;font-family:Courier; font-size:20px">Date of Birth</td>
+        <td style="color:#f5fffa;font-family:Courier; font-size:20px">Role</td>
+        <td style="color:#f5fffa;font-family:Courier; font-size:20px">Profile Type</td>
+        <td style="color:#f5fffa;font-family:Courier; font-size:20px">Type of Insurance</td>
+        <td style="color:#f5fffa;font-family:Courier; font-size:20px">Insurance Total</td>
+     </thead>
+     {% for row in rows %}
+        <tr style="color:#f5fffa;font-family:Courier; font-size:18px">
+           {% for data in row %}
+              <td style="color:#f5fffa">{{ data }}</td>
+           {% endfor %}
+        </tr>
+     {% endfor %}
+    </table><br><br>
+        NOTES: <br>
+        ------------------------------------------------------------------------ <br>
+    <table>
+        <tr>
+            <td>{{ names }}</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

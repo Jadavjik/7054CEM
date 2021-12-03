@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+   <body style="background-color:#dcdcdc;">
+   <div align="center">
+   <br>
+      <a href = "\staff">
+      <button style="background-color:#dcdcdc;border: none; width: 50%; padding:9px 15px; text-align:center; color:#808080; font-family:Courier; font-size:25px" >
+            Dashboard</button></a>
+        <br><br>
+        <h1>Remove User Profile</h1>
+      <form action = "{{ url_for('delete') }}" method = "POST">
+         <br><br><br>
+          Username
+         <input type = "text" name = "username" /></br></br>
+         <input type = "submit" value = "delete" />
+      </form>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+   <body style="background-color:#dcdcdc;">
+   <br>
+   <div align="center">
+      <a href = "\staff">
+      <button style="background-color:#dcdcdc;border: none; width: 50%; padding:9px 15px; text-align:center; color:#808080; font-family:Courier; font-size:25px" >
+            Dashboard</button></a>
+      <form action = "{{ url_for('register_manager') }}" method = "POST">
+         <br><br>
+         <h1>New User Registration</h1>
+         <br><br><br>
+         Full Name
+         <input type = "text" name = "username" /><br><br>
+         Email
+         <input type = "text" name = "email" /><br><br>
+         Date of Birth (yyyy)
+         <input type = "text" name = "start_year" /><br><br>
+         Bonus (£)
+         <input type = "text" name = "bonus" id="bonus" value="0.0" placeholder="0.0"/><br><br>
+         Profile type (video or text)
+         <input type = "text" name = "profile" /><br><br>
+         Type of Insurance
+         <input type = "text" name = "project" /><br><br>
+         Insurance Total (£)
+         <input type = "text" name = "pay" id="pay" value="0.0" placeholder="0.0"/><br><br>
+         <input type = "submit" value = "register" />
+      </form>
+   </div>
+   </body>
+</html>
